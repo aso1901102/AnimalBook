@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".SubActivity">
 
+    <fragment
+        android:id="@+id/fragment"
+        android:name="jp.ac.asojuku.animalbook.TitleFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout="@layout/fragment_title_fglament" />
+
+    <Button
+        android:id="@+id/giraffeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giraffeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hipoButton"
+        app:layout_constraintTop_toTopOf="@+id/hipoButton" />
+
+    <Button
+        android:id="@+id/hipoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hippoButton"
+        app:layout_constraintEnd_toStartOf="@+id/giraffeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lionButton"
+        app:layout_constraintTop_toTopOf="@+id/lionButton" />
+
+    <Button
+        android:id="@+id/lionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lionButton"
+        app:layout_constraintEnd_toStartOf="@+id/hipoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="278dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
