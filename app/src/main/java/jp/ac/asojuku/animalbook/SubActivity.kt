@@ -2,6 +2,7 @@ package jp.ac.asojuku.animalbook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_sub.*
 
 class SubActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class SubActivity : AppCompatActivity() {
     //画面の表示・再表示のイベントコールバックメソッド
     override fun onResume() {
         super.onResume()
+
         //ライオンボタンがクリックされたときのコールバックメソッドのリスナーを設定
         this.lionButton.setOnClickListener {
             //クリックされたときの処理
@@ -70,5 +72,10 @@ class SubActivity : AppCompatActivity() {
                 .addToBackStack(null)                           //元のフラグメントをバックスタックに保存
                 .commit()                                              //トランザクションの完了
         }
+
+        //フラグメントのタイトル文字列を指定して設定
+        //画面のフラグメントをIDで取得してオリジナルのフラグメントクラスにキャストして定数に代入
+        var fragment = this.titleFragment as? TitleFragment
+        fragment?.setTitle("図鑑画面");
     }
 }
