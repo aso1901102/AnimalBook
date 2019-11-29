@@ -7,4 +7,5 @@
     <string name="lionButton">ライオン</string>
     <string name="hippoButton">カバ</string>
     <string name="giraffeButton">キリン</string>
+    <string name="nextButton">次へ</string>
 </resources>
