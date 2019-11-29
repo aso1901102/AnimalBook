@@ -26,11 +26,11 @@
         android:text="@string/giraffeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/hipoButton"
-        app:layout_constraintTop_toTopOf="@+id/hipoButton" />
+        app:layout_constraintStart_toEndOf="@+id/hippoButton"
+        app:layout_constraintTop_toTopOf="@+id/hippoButton" />
 
     <Button
-        android:id="@+id/hipoButton"
+        android:id="@+id/hippoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hippoButton"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/lionButton"
-        app:layout_constraintEnd_toStartOf="@+id/hipoButton"
+        app:layout_constraintEnd_toStartOf="@+id/hippoButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragment" />
