@@ -75,7 +75,16 @@ class SubActivity : AppCompatActivity() {
 
         //フラグメントのタイトル文字列を指定して設定
         //画面のフラグメントをIDで取得してオリジナルのフラグメントクラスにキャストして定数に代入
-        var fragment = this.titleFragment as? TitleFragment
+        var fragment = this.fragment as? TitleFragment
         fragment?.setTitle("図鑑画面");
+
+        //メイン画面に戻るボタンの処理
+        this.backButton.setOnClickListener {
+            //ボタンがクリックされた時の処理
+            //画面を破棄して前の画面を表示
+            //自分を破棄するメソッドの実行
+            this.finish();
+
+        }
     }
 }
